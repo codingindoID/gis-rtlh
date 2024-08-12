@@ -11,7 +11,7 @@
  Target Server Version : 100414
  File Encoding         : 65001
 
- Date: 12/03/2024 05:10:23
+ Date: 25/03/2024 16:32:18
 */
 
 SET NAMES utf8mb4;
@@ -285,41 +285,6 @@ CREATE TABLE `peta`  (
   `status_rumah` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 27 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of peta
--- ----------------------------
-INSERT INTO `peta` VALUES (21, '110.66571858520877', '-6.682955558270813', 'tes alamat', '1710145062_dfbbc2252a84a51f91ec.png', 'kjsfgdsj', '332001', '3320012003', 56, 'aktif', 2003, 'tes alamat', NULL, NULL, NULL, NULL, 'MILIK SENDIRI', NULL, 'MILIK SENDIRI');
-INSERT INTO `peta` VALUES (24, '110.65987083333', '-6.5526716666667', 'asdadasds', NULL, 'sumi', '332006', '3320062016', 42343, 'aktif', 2023, 'asdasd', NULL, NULL, NULL, NULL, 'MILIK SENDIRI', NULL, 'MILIK SENDIRI');
-INSERT INTO `peta` VALUES (25, '110.66485416667', '-6.5527747222222', 'asdadasds', NULL, 'santi', '332006', '3320062016', 42343, 'aktif', 2023, 'asdasd', NULL, NULL, NULL, NULL, 'MILIK SENDIRI', NULL, 'MILIK SENDIRI');
-INSERT INTO `peta` VALUES (26, '110.65029467415093', '-6.558239688917236', 'asdadasds', '1710194454_fc057f49412cf554dd8b.png', 'DIDIK IRAWAN', '332006', '3320062016', 42343, 'aktif', 2023, 'asdasd', '6686869', '5345345345345', NULL, NULL, 'MILIK SENDIRI', NULL, 'MILIK SENDIRI');
-
--- ----------------------------
--- Table structure for peta_copy1
--- ----------------------------
-DROP TABLE IF EXISTS `peta_copy1`;
-CREATE TABLE `peta_copy1`  (
-  `id` int(12) NOT NULL AUTO_INCREMENT,
-  `longitude` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `latitude` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `keterangan` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-  `gambar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `nama_lokasi` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `kecamatan` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `desa` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `luas_rumah` int(12) NULL DEFAULT NULL,
-  `status` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
-  `tahun` int(4) NULL DEFAULT NULL,
-  `alamat` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of peta_copy1
--- ----------------------------
-INSERT INTO `peta_copy1` VALUES (19, '97979', '09709', 'sdgf', NULL, 'tes', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `peta_copy1` VALUES (20, '8326910.726751927', '-6.49586473162486', 'lksdhfsd', NULL, 'hjskdfsd', '332003', '3320032001', 10, 'aktif', 2003, 'tes alamat');
-INSERT INTO `peta_copy1` VALUES (21, '110.66571858520877', '-6.682955558270813', 'tes alamat', NULL, 'kjsfgdsj', '332001', '3320012003', 56, 'aktif', 2003, 'tes alamat');
 
 -- ----------------------------
 -- Table structure for users

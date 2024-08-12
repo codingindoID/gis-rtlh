@@ -101,6 +101,8 @@
                         $('#status_tanah').text(response.status_tanah)
                         $('#status_bangunan').text(response.status_rumah)
                         $('#keterangan').text(response.keterangan)
+                        let location = `https://www.google.com/maps?q=${response.latitude},${response.longitude}`;
+                        $('#direction').attr('href', location)
                     }
                 });
                 $('#modalMap').modal('show')
@@ -131,6 +133,7 @@
                 $('#status_tanah').text(response.status_tanah)
                 $('#status_bangunan').text(response.status_rumah)
                 $('#keterangan').text(response.keterangan)
+                $('#direction').attr('href', location)
             }
         });
         $('#modalMap').modal('show')

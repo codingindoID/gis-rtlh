@@ -26,7 +26,7 @@
             <label for="">Cari Desa <small class="text-warning"><em> * optional </em></small></label>
             <select name="desa" id="desa-filter" class="form-control select2">
                 <option value=""> -- PILIH DESA -- </option>
-                <?php foreach ($desa as $var) : ?>
+                <?php foreach ((array)$desa as $var) : ?>
                     <option value="<?= $var->kode_desa ?>" <?= $select == $var->kode_desa ? 'selected' : '' ?>><?= $var->nama_desa ?></option>
                 <?php endforeach ?>
             </select>
@@ -86,7 +86,7 @@
                     <div class="col-12">
                         <img id="gambar_lokasi" src="<?= base_url('assets/img/default-map.jpg') ?>" alt="" class="w-100" style="max-height: 300px;">
                         <hr>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-8">
                                 <small>Nama Lokasi</small>
                                 <p class="isi-peta" id="nama_lokasi"></p>
@@ -95,7 +95,11 @@
                                 <small>Tahun</small>
                                 <p class="isi-peta" id="tahun"></p>
                             </div>
+                            <div class="col-12">
+                                <a id="direction" class="text-danger" target="_blank"><i class="fas fa-map"></i> Klik Untuk Menuju Lokasi</a>
+                            </div>
                         </div>
+                        <hr>
                         <div class="row">
                             <div class="col-6">
                                 <small>Desa</small>
